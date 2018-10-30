@@ -1,0 +1,107 @@
+---------------------------------------------------------------
+[ 2018-10-24T10:02:52+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] www.zerg.com/api/v1/token/user [运行时间：0.328019s][吞吐率：3.05req/s] [内存消耗：2,640.32kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oGpwn473zy4oa6K-yC8BYGM1Lhs4' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-10-24T10:03:05+08:00 ] 127.0.0.1 POST /index.php/api/v1/address
+[ info ] www.zerg.com/index.php/api/v1/address [运行时间：0.060004s][吞吐率：16.67req/s] [内存消耗：3,040.62kb] [文件加载：67]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-10-24T10:03:54+08:00 ] 127.0.0.1 POST /index.php/api/v1/address
+[ info ] www.zerg.com/index.php/api/v1/address [运行时间：0.058003s][吞吐率：17.24req/s] [内存消耗：3,036.91kb] [文件加载：67]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `user_address`  SET `name`='cq'  WHERE  `id` = 1 [ RunTime:0.003000s ]
+---------------------------------------------------------------
+[ 2018-10-24T10:16:43+08:00 ] 127.0.0.1 POST /index.php/api/v1/address
+[ info ] www.zerg.com/index.php/api/v1/address [运行时间：0.058003s][吞吐率：17.24req/s] [内存消耗：3,042.42kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-10-24T10:17:00+08:00 ] 127.0.0.1 POST /index.php/api/v1/address
+[ info ] www.zerg.com/index.php/api/v1/address [运行时间：0.056003s][吞吐率：17.86req/s] [内存消耗：3,041.55kb] [文件加载：67]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-10-24T10:17:02+08:00 ] 127.0.0.1 POST /index.php/api/v1/address
+[ info ] www.zerg.com/index.php/api/v1/address [运行时间：0.066004s][吞吐率：15.15req/s] [内存消耗：3,041.55kb] [文件加载：67]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-10-24T11:30:45+08:00 ] 127.0.0.1 POST /index.php/api/v1/address
+[ info ] www.zerg.com/index.php/api/v1/address [运行时间：0.059003s][吞吐率：16.95req/s] [内存消耗：3,049.70kb] [文件加载：69]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-10-24T14:42:36+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] www.zerg.com/api/v1/token/user [运行时间：0.298017s][吞吐率：3.36req/s] [内存消耗：2,645.89kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oGpwn473zy4oa6K-yC8BYGM1Lhs4' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-10-24T15:12:37+08:00 ] 127.0.0.1 POST /index.php/api/v1/order
+[ info ] www.zerg.com/index.php/api/v1/order [运行时间：0.064004s][吞吐率：15.62req/s] [内存消耗：3,001.38kb] [文件加载：67]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (2,3) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-10-24T15:13:15+08:00 ] 127.0.0.1 POST /index.php/api/v1/order
+[ info ] www.zerg.com/index.php/api/v1/order [运行时间：0.056003s][吞吐率：17.86req/s] [内存消耗：3,001.60kb] [文件加载：67]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (2,3) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-10-24T15:13:38+08:00 ] 127.0.0.1 POST /index.php/api/v1/order
+[ info ] www.zerg.com/index.php/api/v1/order [运行时间：0.061003s][吞吐率：16.39req/s] [内存消耗：3,001.55kb] [文件加载：67]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (2,3) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-10-24T16:57:46+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] www.zerg.com/api/v1/token/user [运行时间：0.307018s][吞吐率：3.26req/s] [内存消耗：2,646.23kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oGpwn473zy4oa6K-yC8BYGM1Lhs4' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-10-24T16:58:01+08:00 ] 127.0.0.1 POST /index.php/api/v1/order
+[ info ] www.zerg.com/index.php/api/v1/order [运行时间：0.057004s][吞吐率：17.54req/s] [内存消耗：3,006.74kb] [文件加载：67]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (2,3) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-10-24T18:01:54+08:00 ] 127.0.0.1 POST /index.php/api/v1/order
+[ info ] www.zerg.com/index.php/api/v1/order [运行时间：0.058003s][吞吐率：17.24req/s] [内存消耗：3,052.59kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (2,3) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 2 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-10-24T18:01:58+08:00 ] 127.0.0.1 POST /index.php/api/v1/order
+[ info ] www.zerg.com/index.php/api/v1/order [运行时间：0.064004s][吞吐率：15.62req/s] [内存消耗：3,052.59kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (2,3) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 2 LIMIT 1 [ RunTime:0.001001s ]
