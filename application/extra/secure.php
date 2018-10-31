@@ -7,4 +7,5 @@
  */
 return [
     'token_salt' =>'HHsTieBU337mJtKr',
+    'pay_back_url' => 'http://www.zerg.con/api/v1/pay/notify',
 ];

@@ -13,6 +13,7 @@ use app\lib\enum\OrderStatusEnum;
 use app\lib\exception\OrderException;
 use app\lib\exception\TokenException;
 use \app\api\model\Order as OrderModel;
+use think\Config;
 use think\Exception;
 use think\Loader;
 use think\Log;
@@ -60,7 +61,7 @@ class Pay
         $wxOrderDate->SetTotal_fee($totalPrice * 100);
         $wxOrderDate->SetBody('零食商贩');
         $wxOrderDate->SetOpenid($openid);
-        $wxOrderDate->SetNotify_url('http://qq.com');
+        $wxOrderDate->SetNotify_url(config('secure.pay_back_url'));
         $wxOrderDate->SetMch_id('1900009851');
         return $this->getPaySignature($wxOrderDate);
 

@@ -9,10 +9,13 @@
 namespace app\api\Controller\v1;
 
 
+use app\api\validate\IDMustBePostiveint;
 use app\api\validate\OrderPlace;
 use app\api\service\Token as TokenService;
 use app\api\service\Order as OrderService;
-
+use app\api\validate\PagingParameter;
+use app\lib\exception\OrderException;
+use think\response\Json;
 
 
 class Order extends BaseController
@@ -29,7 +32,36 @@ class Order extends BaseController
     //成功：进行库存量的扣除。
     protected $beforeActionList = [
         'checkexclusivescope' =>  ['only'=>'placeorder'],
+        'checkprimaryscope' =>  ['only'=>'getdetail,getsummarybyuser'],
     ];
+    //订单详情
+    public function getDetail($id){
+        (new IDMustBePostiveint())->goCheck();
+        $orderDetail = \app\api\model\Order::get($id);
+        if(!$orderDetail){
+            throw new OrderException();
+        }
+        return $orderDetail->hidden(['prepay_id']);
+
+    }
+    //订单列表
+    public function getSummaryByUser($page=1,$size=5){
+        (new PagingParameter())->goCheck();
+        $uid = \app\api\service\Token::getCurrentUid();
+        $pagingOrders = \app\api\model\Order::getSummaryByUser($uid,$page,$size);
+        if($pagingOrders->isEmpty()){
+            return json([
+                'data' => [],
+                'current_page' => $pagingOrders->getCurrentPage(),
+            ]);
+        }else{
+            $data = $pagingOrders->hidden(['snap_items','snap_address','prepay_id'])->toArray();
+            return json([
+                'data' => $data,
+                'current_page' => $pagingOrders->getCurrentPage(),
+            ]);
+        }
+    }
     //下订单接口
     public function placeOrder(){
         (new OrderPlace())->goCheck();

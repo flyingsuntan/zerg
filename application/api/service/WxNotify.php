@@ -12,11 +12,11 @@ use app\api\model\Product;
 use app\lib\enum\OrderStatusEnum;
 use think\Db;
 use think\Exception;
+use think\Loader;
 use think\Log;
 use app\api\model\Order as OrderModel;
 use app\api\service\Order as OrderService;
-
-Log::record('WxPay.WxPay',EXTEND_PATH,'.Api.php');
+Loader::import('WxPay.WxPay',EXTEND_PATH,'.Api.php');
 class WxNotify extends \WxPayNotify
 {
     //回调函数处理
