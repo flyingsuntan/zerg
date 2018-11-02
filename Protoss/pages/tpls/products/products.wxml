@@ -1,0 +1,7 @@
+<template name="products">
+  <view class="products-box">
+    <block wx:for>
+    <view class="products-item"></view>
+    </block>
+  </view>
+</template>

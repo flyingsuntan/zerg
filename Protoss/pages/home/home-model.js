@@ -3,11 +3,12 @@ class Home extends Base{
   constructor(){
     super();
   }
-  getBannerData(id,callBack){
+  //banner
+  getBannerData(id,callback){
     var params = {
       url:'banner/'+id,
-      sCallBack:function(res){
-        callBack && callBack(res.items);
+      sCallback:function(res){
+        callback && callback(res.items);
       }
     }
     this.request(params);
@@ -19,6 +20,15 @@ class Home extends Base{
     //     callBack(res);
     //   }
     // })
+  }
+  getThemeData(callback) {
+    var params = {
+      url: 'theme/?ids=1,2,3',
+      sCallback: function (res) {
+        callback && callback(res);
+      }
+    }
+    this.request(params);
   }
 }
 export{Home};

@@ -20,11 +20,9 @@ class Base {
         'token':wx.getStorageInfoSync('token')
       },
       success:function(res){
-        // if(params.sCallBack){
-        //   params.sCallBack(res);
-        // }
-        //console.log(params.sCallBack);
-        params.sCallBack && params.sCallBack(res.data);
+    
+        //console.log(res.data);
+        params.sCallback && params.sCallback(res.data);
         
       },
       fail:function(err){

@@ -13,9 +13,8 @@
 use think\Route;
 Route::get('api/:version/banner/:id','api/:version.Banner/getBanner');
 
-Route::get('api/:version/theme/:ids','api/:version.theme/getSimpleList');
-
-//Route::get('api/:version/banner/:id','api/:version.Banner/getComplexOne');
+Route::get('api/:version/theme/','api/:version.theme/getSimpleList');
+Route::get('api/:version/theme/:id','api/:version.Theme/getComplexOne');
 /*
 Route::get('api/:version/product/by_category','api/:version.product/getAllInCategory');
 Route::get('api/:version/product/:id','api/:version.Product/getOne',[],['id'=>'\d+']);
