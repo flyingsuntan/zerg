@@ -1,0 +1,16 @@
+---------------------------------------------------------------
+[ 2018-11-07T14:34:13+08:00 ] 127.0.0.1 GET /index.php/api/v1/category/all
+[ info ] www.zerg.com/index.php/api/v1/category/all [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：2,963.72kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (6,5,7,4,8,0) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-11-07T14:35:14+08:00 ] 127.0.0.1 GET /index.php/api/v1/category/all
+[ info ] www.zerg.com/index.php/api/v1/category/all [运行时间：0.064004s][吞吐率：15.62req/s] [内存消耗：2,963.70kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (6,5,7,4,8,0) [ RunTime:0.000000s ]
