@@ -21,7 +21,7 @@ class Address extends BaseController
 {
     //TP5前置方法
     protected $beforeActionList = [
-        'checkprimaryscope' =>  ['only'=>'createorupdateaddress'],
+        'checkprimaryscope' =>  ['only'=>'createorupdateaddress,getuseraddress'],
     ];
 
     /**
@@ -30,7 +30,7 @@ class Address extends BaseController
      * @throws UserException
      */
     public function getUserAddress(){
-        $uid = \app\api\service\Token::getCurrentUid();
+        $uid = TokenService::getCurrentUid();
         $userAddress = UserAddress::where('user_id', $uid)
             ->find();
         if(!$userAddress){

@@ -22,29 +22,45 @@ class Address extends Base{
     flag = centerCitys.indexOf(name) >= 0;
     return flag;
   }
-  /**更新保存地址 */
-  submitAddress(data,callback){
+  /**获得我自己的收货地址 */
+  getAddress(callback){
+    var that = this;
+    var param = {
+      url:'address',
+      sCallback:function(res){
+        if(res){
+          res.totalDetail = that.setAddressInfo(res);
+          callback && callback(res);
+        }
+      }
+    };
+    this.request(param);
+  }
+  /*更新保存地址*/
+  submitAddress(data, callback) {
     data = this._setUpAddress(data);
     var param = {
       url: 'address',
       type:'post',
-      data:data,
-      sCallback:function(res){
-        callback && callback(true,res);
-      },eCallback(res){
-        callback && callback(false,res);
+      data: data,
+      sCallback: function (res) {
+        callback && callback(true, res);
+      }, eCallback(res) {
+        callback && callback(false, res);
       }
     };
     this.request(param);
   }
   /**保存地址 */
   _setUpAddress(res){
+    //console.log(res);
     var formData = {
-      name:res.username,
+      name:res.userName,
       province:res.provinceName,
       city:res.cityName,
       country:res.countyName,
-      mobile:res.telNumber,
+      //mobile:res.telNumber,
+      mobile:15086962026,
       detail:res.detailInfo
     };
     return formData;
