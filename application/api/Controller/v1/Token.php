@@ -22,7 +22,7 @@ class Token
         return json(['token'=>$token]);
     }
     public function verifyToken($token=''){
-        echo $token;die;
+
         if($token){
             throw new ParaneterException([
                 'token不允许为空'

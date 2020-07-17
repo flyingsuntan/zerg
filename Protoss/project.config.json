@@ -18,6 +18,8 @@
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -41,8 +43,9 @@
 				{
 					"id": 0,
 					"name": "a",
-					"pathName": "pages/cart/cart",
-					"query": ""
+					"pathName": "pages/home/home",
+					"query": "",
+					"scene": null
 				}
 			]
 		}
